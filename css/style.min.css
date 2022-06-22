@@ -228,8 +228,8 @@ a:hover {
 }
 
 .hero-carousel .owl-prev, .hero-carousel .owl-next {
-    width: 110px;
-    height: 110px;
+    width: 70px;
+    height: 70px;
 }
 
 .hero-carousel .owl-prev, .hero-carousel .owl-next {
@@ -252,14 +252,18 @@ a:hover {
 
 .hero-carousel .owl-item img {
     height: 600px;
-    object-fit: cover;
+    /*object-fit: cover;*/
+    object-fit: contain;
     max-width: 100%;
 }
 
 @media (min-width: 992px) {
-    .hero-carousel .owl-item img {
-        height: calc(100vh - 130px);
-    }
+    /*.hero-carousel .owl-item img {*/
+        /*height: calc(100vh - 90px);*/
+    /*}*/
+    /*.hero-carousel .owl-nav {*/
+        /*bottom: 40px;*/
+    /*}*/
 }
 
 .thumb-menu img {
@@ -551,8 +555,16 @@ a:hover {
     .sidenav a {
         font-size: 18px;
     }
-}
 
+}
+@media (max-width: 450px){
+    .hero-carousel .owl-item img {
+        height: calc(100vh - 288px) !important;
+    }
+    .hero-carousel .owl-nav {
+        bottom: 0;
+    }
+}
 #side-search .form-control {
     background-color: transparent;
 }
@@ -800,10 +812,17 @@ a:hover {
         height: auto;
     }
 }
-
+@media (min-width: 1920px){
+    .hero-carousel .owl-nav {
+        right: 0;
+    }
+}
 @media (min-width: 1440px) {
     .team-card .img-fluid {
         width: 100%;
+    }
+    .hero-carousel .owl-nav {
+        right: 56px;
     }
 }
 
@@ -851,11 +870,7 @@ a:hover {
     color: #fff;
 }
 
-@media (min-width: 1024px) {
-    .padding-booking {
-        padding: 0 20%;
-    }
-}
+
 
 @media (max-width: 768px) {
     .nav-link {
@@ -878,7 +893,11 @@ a:hover {
         /*color: black !important;*/
     }
 }
-
+@media (min-width: 768px){
+    .hero-carousel .owl-nav {
+        right: 130px;
+    }
+}
 .nav-link-footer {
     color: #b96b3a !important;
 }
@@ -898,7 +917,21 @@ a:hover {
 .a-service:hover {
     color: black;
 }
-
+@media (min-width: 1024px) {
+    .padding-booking {
+        padding: 0 20%;
+    }
+    .hero-carousel .owl-item img {
+        height: calc(100vh - 288px) !important;
+    }
+    .hero-carousel .owl-nav {
+        bottom: 0;
+        right: 27px;
+    }
+    .hero {
+        height: calc(100vh - 288px);
+    }
+}
 @media (max-width: 992px) {
     /*.navbar-expand-lg .navbar-collapse {*/
         /*background: #222 !important;*/
